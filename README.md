@@ -7,6 +7,12 @@ recebe entradas de texto do usuário até que o usuário digite sair e então o 
 anteriores
 </p>
 
+## Requisitos
+<p>
+Para executar o projeto em sua máquina é necessário ter o node instalado em seu computador, para o projeto funcionar é só seguir o passo a passo 
+descrito no final do documento.
+</p>
+
 ## Stacks
 
 Foi utilizado no projeto as stacks a seguir:
