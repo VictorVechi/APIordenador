@@ -2,7 +2,7 @@ import chalk from "chalk";
 import input from "readline-sync"
 
 class manipularArray {
-    getEntrada(arr) {
+    getEntrada() {
         // Pega o input do usuário
         let entrada = input.question(chalk.greenBright("Digite o comando do css:\t"))
 
@@ -10,13 +10,12 @@ class manipularArray {
         if (entrada.toUpperCase() === "SAIR") {
             // Se for, retorna uma mensagem de saída e a palavra "sair" em maiúsculo para o array
             console.log(chalk.redBright("Saindo..."))
-            arr.push(entrada.toUpperCase())
+            return "SAIR"
         } else {
             // Se não for, adiciona o input normalmente ao array
-            arr.push(entrada)
+            return entrada.toLowerCase()
         }
     }
-
     printArray(arr) {
         // Ordena o array
         arr = arr.sort()
